@@ -1,0 +1,240 @@
+/* Amarillo: #EAC926;
+Azul:         #03264C;
+Celeste:      #1259c3;
+Gris oscuro:  #666;
+Gris claro:   #ebebeb;
+Verde:        #39b54a; */
+
+/* Tipografías
+Familia: 'Roboto'
+Nos envían esta demo de cómo cargar fuentes de Google Fonts. Además
+podemos consultar el siguiente recurso aquí, para más detalle. */
+
+/* Tamaños Tipográficos
+Cuerpos de texto: 12px
+Titulares (Basado en tu última visita/Ofertas): 24px
+Precios: 18px
+Descuentos: 16px
+Descripciones: 16px */
+
+* {
+  box-sizing: content-box;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+h3 {
+  color: #666;
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+header {
+  background-color: #eac926;
+}
+
+a {
+  font-family: 'Roboto', sans-serif;
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  padding-left: 0;
+}
+
+li {
+  list-style: none;
+}
+
+article {
+  margin: 5%;
+  color: #666;
+  text-align: center;
+}
+
+.header__container {
+  width: 100vw;
+}
+
+.header__logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.header__img {
+  width: 20%;
+}
+
+.search__container {
+  background-color: white;
+  border-radius: 5px;
+}
+
+.search__input {
+  border: none;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 50vw;
+ 
+}
+
+.search__button {
+  border: none;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.icon-footer {
+  color: #1259c3;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.fa-bars {
+  color: white;
+  padding: 10px;
+  background-color: #1259c3;
+  border-radius: 5px;
+}
+
+.burger-menu {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0px;
+}
+
+.info-cuotas {
+  text-align: center;
+  padding: 5px 15px;
+}
+
+span,
+p {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+}
+
+.last-visit__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.last-visit__title {
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+
+.last-visit__card-container {
+  background-color: #ebebeb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.article-card {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  width: 50vw;
+  padding: 10px 0 10px 0;
+}
+
+.article__img {
+  width: 50%;
+}
+
+.p-precios {
+  padding-top: 10px;
+  font-size: 18px;
+}
+
+.p-descuentos {
+  font-size: 16px;
+  color: green;
+}
+
+.p-descripcion {
+  font-size: 16px;
+}
+
+.nav {
+  display: none;
+}
+
+.nav__user-list li {
+  margin-right: 10px;
+}
+
+.nav__icon {
+  margin-left: 5px;
+}
+
+@media (min-width: 361px) {
+  .nav {
+    display: inline;
+    width: 100vw;
+  }
+  .nav__bar {
+    padding: 5px 0 5px;
+  }
+  .nav__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav__user-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .nav__bar-list {
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    gap: 10px;
+  }
+
+  .burger-menu {
+    display: none;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__img {
+    width: 25%;
+  }
+
+  .card__container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .article-card {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+  }
+}
